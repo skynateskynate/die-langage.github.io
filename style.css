@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --body-bg-color: #000;
+    --text-color: #fff;
+    --outline: 2px ridge #000;
+    --link-color: #FFF;
+    --success-color: rgb(159, 255, 159);
+    --btn-primary-a-clor: #96ddff;
+    --btn-danger-a-clor: #ffd5d5;
+    --size-border: 3px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--body-bg-color);
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgb(16, 16, 16);
+}
+
+a{
+    margin-top: 5px;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+button{
+    border: none;
+}
+hr.hr-section{
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, rgba(125,78,23,0) 50%, rgba(8,14,3,1) 100%), url('https://st2.depositphotos.com/12982378/45424/i/450/depositphotos_454246318-stock-photo-background-brown-laminated-plastic-wood.jpg');
+}
+hr.hr-section.sous-section{
+    height: 1px;
+    margin: 3px 0;
+}
+
+.m5{
+    margin: 5px;
+}
+.m-t5{
+    margin-top: 5px;
+}
+.m-t10{
+    margin-top: 10px;
+}
+.m-b10{
+    margin-bottom: 10px;
+}
+.m-l5{
+    margin-left: 5px;
+}
+.m-l10{
+    margin-left: 10px;
+}
+.m-r5{
+    margin-right: 5px;
+}
+.m-r10{
+    margin-right: 10px;
+}
+.s10{
+    font-size: 10px;
+}
+
+.s12{
+    font-size: 12px;
+}
+
+.s14{
+    font-size: 14px;
+}
+
+.s16{
+    font-size: 16px;
+}
+
+.va-m{
+    vertical-align: middle;
+}
+
+.w1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(8,14,3,1) 0%, rgba(156,96,27,1) 48%, rgba(8,14,3,1) 100%);
+    background-repeat: repeat-x;
+    height: var(--size-border);
+    width: 100%;
+}
+
+.w2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, rgba(156,96,27,1) 50%, rgba(8,14,3,1) 100%);
+    background-repeat: repeat-Y;
+    height: 100%;
+    width: var(--size-border);
+}
+
+.w3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, rgba(156,96,27,1) 50%, rgba(8,14,3,1) 100%);
+    background-repeat: repeat-Y;
+    height: 100%;
+    width: var(--size-border);
+}
+
+.w4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(8,14,3,1) 0%, rgba(156,96,27,1) 48%, rgba(8,14,3,1) 100%);
+    background-repeat: repeat-y;
+    height: var(--size-border);
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 420px;
+    background-color: #000;
+}
+
+.login-header{
+    margin: 2px;
+}
+
+.login-title{
+    color: #FFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-presentation{
+    position: relative;
+    color: var(--text-color);
+    background: rgb(2, 23, 23);
+}
+
+.login-presentation .content{
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.login-presentation p{
+    font-size: 14px;
+    text-align: center;
+}
+.login-begin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(2, 23, 23);
+}
+
+.login-body input{
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: -10px;
+    color: white;
+    background-color: rgb(2, 23, 23);
+    width: 200px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login-body button{
+    display: block;
+    margin: 13px auto auto;
+    cursor: pointer;
+}
+
+.btn{
+    margin: 10px 0;
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, rgba(59,117,21,1) 50%, rgba(8,14,3,1) 100%);
+    padding: 2px 10px;
+    outline: 3px ridge gray;
+    border-radius: 2px;
+    color: var(--success-color);
+    font-weight: 600;
+    text-shadow: 1px .5px #000;
+}
+
+.btn.btn-primary{
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, #206bf1 50%, rgba(8,14,3,1) 100%);
+    color: var(--btn-primary-a-clor);
+}
+
+.btn.btn-primary a{
+    color: var(--btn-primary-a-clor);
+}
+
+.btn.btn-danger{
+    background: linear-gradient(90deg, rgba(8,14,3,1) 0%, #c80909 50%, rgba(8,14,3,1) 100%);
+    color: var(--btn-danger-a-clor);
+}
+
+.btn.btn-danger a{
+    color: var(--btn-danger-a-clor);
+}
+
+.btn a{
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.start-info{
+    padding: 5px;
+    text-align: justify;
+    color: rgb(255, 192, 115);
+    outline: 1px ridge rgb(255, 192, 115);
+    width: 340px;
+    margin: 15px auto;
+}
+
+.fight{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fight-monster{
+    display: flex;
+    align-items: center;
+    outline: var(--outline);
+    padding: 10px;
+    gap: 10px;
+}
+
+.fight-jauge{
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: green;
+    border-radius: 6px;
+}
+
+.reward-resource span{
+    position: relative;
+}
+
+.resource{
+    display: inline-block;
+    width: 50px;
+}
+.resource::before{
+    content: '';
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.resource.coin{
+    background: url('https://static.mrush.mobi/view/image/icons/silver.png');
+    background-repeat: no-repeat;
+}
+
+.resource.gold{
+    background: url('https://static.mrush.mobi/view/image/icons/gold.png');
+    background-repeat: no-repeat;
+}
+
+.resource.xp{
+    background: url('https://static.mrush.mobi/view/image/icons/expirience.png');
+    background-repeat: no-repeat;
+}
+
+.reward-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reward-item .item-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    column-gap: 20px;
+}
+.stats{
+    position: relative;
+    text-align: center;
+}
+.stats span{
+    white-space: nowrap;
+}
+
+.header-property img{
+    vertical-align: middle;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.bar img, .bar .progress-bar-text{
+    vertical-align: middle;
+}
+.bar span{
+    display: inline-block;
+}
+
+.bar .level{
+    position: relative;
+    margin-left: 10px;
+}
+
+.bar .level::before{
+    top: 2px;
+    content: '';
+    position: absolute;
+    background: url('https://static.mrush.mobi/view/image/icons/up.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    left: -15px;
+}
+.progress-bar{
+    position: relative;
+    width: 80%;
+    height: 8px;
+    outline: 1.5px ridge #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: .6;
+    background: linear-gradient(0deg, rgba(8,14,3,1) 0%, rgba(35,97,16,1) 41%, rgba(57,156,27,1) 48%, rgba(35,97,16,1) 54%, rgba(8,14,3,1) 100%);
+}
+
+.progress-bar-nextground{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(0deg, rgba(8,14,3,1) 0%, rgba(69,119,50,1) 41%, rgba(179,255,150,1) 48%, rgba(69,119,50,1) 54%, rgba(8,14,3,1) 100%);
+}
+
+.progress-bar-text{
+    right: 100%;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.messenger{
+    position: absolute;
+    right: 0;
+    display: initial;
+}
+.messenger img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+.boss{
+    width: 50%;
+}
+.boss a{
+    position: relative;
+    display: flex;
+    background-color: rgb(2, 23, 23);
+    padding: 2px;
+}
+
+.border{
+    margin: 0 5px;
+    border: 2px ridge #596b63;
+    display: flex;
+    gap: 7px;
+    border-radius: 2px;
+}
+
+.border.sous-border{
+    border: 1px ridge #596b63;
+
+}
+
+.header-resource{
+    text-align: center;
+}
+.resource-block{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.resource-block img{
+    vertical-align: sub;
+}
+
+.body .section{
+    background: rgb(2, 23, 23);
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.body .section img{
+    vertical-align: sub;
+}
+.footer{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section{
+    width: 75px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2, 23, 23);
+    color: rgb(255, 212, 133);
+}
+
+.footer-text{
+    background: rgb(2, 23, 23);
+    text-align: center;
+}
+
+.footer-text .forum{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.footer-footer a{
+    display: inline-block;
+    margin: 10px 0;
+    color: gray;
+}
